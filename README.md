@@ -9,7 +9,7 @@ NaviGuildJSON
 
 Карту вы можете сделать  [сами](https://github.com/mapsforge/mapsforge/blob/master/docs/Getting-Started-Map-Writer.md) либо использовать уже [готовые]( http://download.mapsforge.org/maps/)
 
-По умолчанию использован текстовый формат обмена данными [JSON]( https://ru.wikipedia.org/wiki/JSON) со своей структурой.
+Для данных по умолчанию использован текстовый формат  [JSON]( https://ru.wikipedia.org/wiki/JSON) со своей структурой.
 ```
  "date":"дата создания",
  "city":"Минск",
