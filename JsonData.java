@@ -1,4 +1,3 @@
-
 public class JsonData {
     //Название города
     private String city;
