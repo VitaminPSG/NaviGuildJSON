@@ -7,6 +7,8 @@ ublic class JsonStop {
     private double[] point;
     //Тип остановки, определяется из суммы уникальных типов транспорта. Определяет иконку для остановки
     private int transport;
+      //Список ближайщих остановок
+    private List<JsonNeighbor> neighbors;
     //Массив ключей маршрутов, проходящих через остановку
     private int[] routes;
 
