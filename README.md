@@ -38,14 +38,32 @@ NaviGuildJSON
 	"name":"Название остановки 1",
 	"point":[53.88736146,27.60818766]
 	"transport":1,
-	"routes":[1,2,3]
+	"routes":[1,2,3],
+	"neighbors" : [
+		{
+		"stopId" : 1,
+		"distance" : 232
+		},{
+		"stopId" : 2,
+		"distance" : 132
+		}
+	]}
 	},
 	{
 	"id":2,
 	"name":"Название остановки 2",
 	"point":[53.88736146,27.60818766]
 	"transport":4,
-	"routes":[1,2,3]
+	"routes":[1,2,3],
+		"neighbors" : [
+		{
+		"stopId" : 1,
+		"distance" : 232
+		},{
+		"stopId" : 2,
+		"distance" : 132
+		}
+	]
 	}],
 "routes" :[
 	{
@@ -76,6 +94,10 @@ NaviGuildJSON
 	* point - координаты [широта, долгота]
 	* transport - тип остановки, определяется транспортом который останавливается. Например [см. константы](https://github.com/VitaminPSG/NaviGuildJSON/blob/master/Constants.java) на остановке останавливается автобус и трамвай, тип остановки будет 1 + 4 = 5.
 	* routes - массив ключей маршрутов, проходящих через остановку
+	* neighbors - список соседних остановок
+		* stopId - ключ остановки
+		* distance - расстояние в м.
+
 *routes - список маршрутов
 	* id - ключ маршрута
 	* name - название маршрута
